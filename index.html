@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+
+  <script type="application/json" id="root-data">
+    [
+      {
+        "number": 57,
+        "name": "Mark",
+        "product": "Cappucino",
+        "timeToPickup": 3
+      },
+      {
+        "number": 58,
+        "name": "Alexandra",
+        "product": "Americano",
+        "timeToPickup": 6
+      },
+      {
+        "number": 59,
+        "name": "Carolina",
+        "product": "Cafe Late",
+        "timeToPickup": 8
+      }
+    ]
+  </script>
+
+  <style>
+    body {
+      background-color: #f5f7fb;
+      color: #374151;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      padding: 0.5rem 0;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      padding: 2rem;
+      margin: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem;
+    }
+
+    .latest-orders-widget__order-row {
+      border: solid 1px #e5e5e7;
+      display: flex;
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+
+    .latest-orders-widget__row--dashed {
+      border-style: dashed;
+    }
+
+    .order-row__number {
+      width: 10rem;
+    }
+    .order-row__name {
+      width: 12rem;
+    }
+    .order-row__product {
+      width: 12rem;
+    }
+    .order-row__pick_up_time {
+      font-weight: 600;
+      width: 12rem;
+    }
+
+    .order-row__pick_up_time--purple {
+      color: #7e22ce;
+    }
+
+  </style>
+
+  <body>
+
+    <div class="container">
+
+      <div class="card machine-status-widget"></div>
+
+      <div class="card latest-orders-widget">
+
+        <div class="latest-orders-widget__order-row latest-orders-widget__row--dashed">
+          <div class="order-row__number">
+            Order #57
+          </div>
+          <div class="order-row__name">
+            Mark
+          </div>
+          <div class="order-row__product">
+            Cappucino
+          </div>
+          <div class="order-row__pick_up_time order-row__pick_up_time--purple">
+            Pick up at 09:25
+          </div>
+        </div>
+
+
+        <h2>Next in Queue</h2>
+
+        <div class="latest-orders-widget__order-row">
+          <div class="order-row__number">
+            Order #58
+          </div>
+          <div class="order-row__name">
+            Alexandra
+          </div>
+          <div class="order-row__product">
+            Americano
+          </div>
+          <div class="order-row__pick_up_time">
+            Pick up at 09:32
+          </div>
+        </div>
+
+        <div class="latest-orders-widget__order-row">
+          <div class="order-row__number">
+            Order #59
+          </div>
+          <div class="order-row__name">
+            Carolina
+          </div>
+          <div class="order-row__product">
+            Cafe Late
+          </div>
+          <div class="order-row__pick_up_time">
+            Pick up at 09:36
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <script src="/build/main.js"></script>
+    <script src="/build/svelte.js"></script>
+
+  </body>
+</html>
